@@ -1,0 +1,47 @@
+ion-toolbar.background{
+    --background: url(../../assets/a.png) 0 0 ;
+    --padding-start: var(--ion-padding, 0px);
+    --padding-end: var(--ion-padding, 0px);
+    --padding-top: var(--ion-padding, 0px);
+    --padding-bottom: var(--ion-padding, 0px);
+    -webkit-padding-start: var(--ion-padding, 0px);
+    padding-inline-start: var(--ion-padding, 0px);
+    -webkit-padding-end: var(--ion-padding, 0px);
+    padding-inline-end: var(--ion-padding, 0px);
+    padding-top: var(--ion-padding, 0px);
+    padding-bottom: var(--ion-padding, 0px);
+    
+  }
+  
+  ion-content.background{
+    --background: url(../../assets/a.png) 0 0/100% 100% no-repeat;
+  }
+  .yanmenu{
+    width : 35px;
+    height : 35px;
+  }
+  .ara{
+    background-color: #b1b1b1;
+  }
+  .kategori{
+    font-size: 150%;
+    color: white;   
+  }
+  .icerik{
+    font-size: 100%;
+    color: white;   
+  }
+  .logo{
+    width : 83px;
+    height : 113px;
+  }
+  .footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:120px;  
+    
+    text-align:center;
+ }
+ 
+  

@@ -1,0 +1,67 @@
+ion-toolbar.background{
+    --background: url(../../assets/a.png) 0 0 ;
+    --padding-start: var(--ion-padding, 0px);
+    --padding-end: var(--ion-padding, 0px);
+    --padding-top: var(--ion-padding, 0px);
+    --padding-bottom: var(--ion-padding, 0px);
+    -webkit-padding-start: var(--ion-padding, 0px);
+    padding-inline-start: var(--ion-padding, 0px);
+    -webkit-padding-end: var(--ion-padding, 0px);
+    padding-inline-end: var(--ion-padding, 0px);
+    padding-top: var(--ion-padding, 0px);
+    padding-bottom: var(--ion-padding, 0px);
+  }
+  
+  ion-content.background{
+    --background: url(../../assets/a.png) 0 0/100% 100% no-repeat;
+  }
+  .yanmenu{
+    width : 35px;
+    height : 35px;
+    
+  }
+  .giris{
+      width: 60%;
+      background-color: white;
+      border-radius:6px;
+  }
+  .girisbuton{
+      width: 60%;
+  }
+  .ara{
+    background-color: white;
+    width: 50%;
+    -webkit-padding-start: 0px;
+    padding-inline-start: 0px;
+    -webkit-padding-end: 0px;
+    padding-inline-end: 0px;
+
+  }
+  .kategori{
+    font-size: 150%;
+    color: white;   
+  }
+  
+  .logo{
+    width : 83px;
+    height : 113px;
+  }
+  #fb {
+    box-shadow: 0 0 20px black inset, 0 0 10px 4px black;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    border-radius: 6px;
+}
+    #fb:hover {
+        box-shadow: 0 0 5px black inset, 0 0 5px 2px black;
+    }
+
+#ggl {
+    box-shadow: 0 0 20px black inset, 0 0 10px 4px black;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    border-radius: 6px;
+}
+    #ggl:hover {
+        box-shadow: 0 0 5px black inset, 0 0 5px 2px black;
+    }

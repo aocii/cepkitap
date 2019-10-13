@@ -14,7 +14,11 @@ const routes: Routes = [
   {
     path: 'list',
     loadChildren: () => import('./list/list.module').then(m => m.ListPageModule)
-  }
+  },
+  { path: 'hesap', loadChildren: './hesap/hesap.module#HesapPageModule' },
+  { path: 'kitap', loadChildren: './kitap/kitap.module#KitapPageModule' },
+  { path: 'soru', loadChildren: './soru/soru.module#SoruPageModule' },
+  { path: 'giris', loadChildren: './giris/giris.module#GirisPageModule' }
 ];
 
 @NgModule({

@@ -1,0 +1,88 @@
+
+.transbox {
+    width:80%;
+    
+    margin:5% 5%;
+    font-size: 16px;
+    color: white;
+ }
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  .container:hover input ~ .checkmark {
+    background-color: rgb(151, 144, 144);
+  }
+  .container input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  .container .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+  }
+  .alt{
+      bottom: 0px;
+      position: fixed;
+  }
+  ion-toolbar.background{
+    --background: url(../../assets/a.png) 0 0 ;
+    --padding-start: var(--ion-padding, 0px);
+    --padding-end: var(--ion-padding, 0px);
+    --padding-top: var(--ion-padding, 0px);
+    --padding-bottom: var(--ion-padding, 0px);
+    -webkit-padding-start: var(--ion-padding, 0px);
+    padding-inline-start: var(--ion-padding, 0px);
+    -webkit-padding-end: var(--ion-padding, 0px);
+    padding-inline-end: var(--ion-padding, 0px);
+    padding-top: var(--ion-padding, 0px);
+    padding-bottom: var(--ion-padding, 0px);
+  }
+  
+  ion-content.background{
+    --background: url(../../assets/a.png) 0 0/100% 100% no-repeat;
+  }
+  .logo{
+    width : 83px;
+    height : 113px;
+  }
+  .yon{
+    width : 40px;
+    height : 40px;
+  }
+ 
