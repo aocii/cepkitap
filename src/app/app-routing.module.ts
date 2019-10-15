@@ -4,7 +4,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'giris',
     pathMatch: 'full'
   },
   {
@@ -16,7 +16,18 @@ const routes: Routes = [
     loadChildren: () => import('./list/list.module').then(m => m.ListPageModule)
   },
   { path: 'hesap', loadChildren: './hesap/hesap.module#HesapPageModule' },
-  { path: 'kitap', loadChildren: './kitap/kitap.module#KitapPageModule' },
+  { path: 'kitap',
+    children: [
+      {
+        path: '',
+        loadChildren: './kitap/kitap.module#KitapPageModule',
+      },
+      {
+        path: ':kitapId',
+        loadChildren: './kitap/kitap-detay/kitap-detay.module#KitapDetayPageModule'
+      }
+    ]
+  },
   { path: 'soru', loadChildren: './soru/soru.module#SoruPageModule' },
   { path: 'giris', loadChildren: './giris/giris.module#GirisPageModule' }
 ];

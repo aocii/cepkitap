@@ -8,11 +8,10 @@
   <div class="kategori" align="center">KİTAPLAR</div><br><br>
 
   <ion-grid>
-    <ion-row>
+    <ion-row *ngFor="let kitap of Kitaplar">
 
       <ion-col>
-        <img  src="/assets/deneme.png" >
-        
+        <ion-img  [src]="kitap.resim " ></ion-img> 
       </ion-col>
       
       <ion-col>
@@ -25,7 +24,7 @@
               <div class="l_icerik" ><img  class ="icon" src="/assets/tl.png" ></div><br>
               
             </ion-col>
-            <ion-col size="9">
+            <ion-col size="9"> 
                 <div class="icerik" > 123 İndirme</div><br>
                 <div class="icerik" >  123 Beğeni</div><br>
                 <div class="icerik" > 23 Yorum</div><br>
@@ -40,72 +39,9 @@
     </ion-row>
   </ion-grid>
 
-  <ion-grid>
-      <ion-row>
   
-        <ion-col>
-          <img  src="/assets/deneme.png" >
-          
-        </ion-col>
-        
-        <ion-col>
-          <ion-grid>
-            <ion-row>
-              <ion-col size="3">
-                <div class="l_icerik" ><img  class ="icon" src="/assets/dl.png" ></div><br>
-                <div class="l_icerik" ><img  class ="icon" src="/assets/like.png" ></div><br>
-                <div class="l_icerik" ><img  class ="icon" src="/assets/cmnt.png" ></div><br>
-                <div class="l_icerik" ><img  class ="icon" src="/assets/tl.png" ></div><br>
-                
-              </ion-col>
-              <ion-col size="9">
-                  <div class="icerik" > 123 İndirme</div><br>
-                  <div class="icerik" >  123 Beğeni</div><br>
-                  <div class="icerik" > 23 Yorum</div><br>
-                  <div class="icerik" > 45 TL</div><br>
-                  
-              </ion-col>
-            </ion-row>
-          </ion-grid>
-          <ion-button size="small" color="primary">Satın Al</ion-button>       
-        </ion-col>
-        
-      </ion-row>
-    </ion-grid>
 
-    <ion-grid>
-        <ion-row>
-    
-          <ion-col>
-            <img  src="/assets/deneme.png" >
-            
-          </ion-col>
-          
-          <ion-col>
-            <ion-grid>
-              <ion-row>
-                <ion-col size="3">
-                  <div class="l_icerik" ><img  class ="icon" src="/assets/dl.png" ></div><br>
-                  <div class="l_icerik" ><img  class ="icon" src="/assets/like.png" ></div><br>
-                  <div class="l_icerik" ><img  class ="icon" src="/assets/cmnt.png" ></div><br>
-                  <div class="l_icerik" ><img  class ="icon" src="/assets/tl.png" ></div><br>
-                  
-                </ion-col>
-                <ion-col size="9">
-                    <div class="icerik" > 123 İndirme</div><br>
-                    <div class="icerik" >  123 Beğeni</div><br>
-                    <div class="icerik" > 23 Yorum</div><br>
-                    <div class="icerik" > 45 TL</div><br>
-                    
-                </ion-col>
-              </ion-row>
-            </ion-grid>
-            <ion-button size="small" color="primary">Satın Al</ion-button>       
-          </ion-col>
-          
-        </ion-row>
-      </ion-grid>
-
+   
 
   
 </ion-content> 

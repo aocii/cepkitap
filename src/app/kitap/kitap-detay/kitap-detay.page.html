@@ -1,0 +1,21 @@
+<ion-toolbar padding class="background">
+  <ion-buttons slot="start">
+    <ion-menu-button></ion-menu-button>
+  </ion-buttons>
+</ion-toolbar>
+<ion-content padding class="background">
+  
+  <div class="kategori" align="center">KİTAPLAR</div><br><br>
+
+  
+  <ion-img [src]="loadedKitap.resim"></ion-img>
+<ion-item *ngFor="let bilgi of loadedKitap.bilgiler"> {{bilgi}}</ion-item>
+     
+
+   
+
+  
+</ion-content> 
+
+
+
