@@ -1,15 +1,26 @@
-<ion-toolbar padding class="background">
-  <ion-buttons slot="start">
-    <ion-menu-button></ion-menu-button>
-  </ion-buttons>
-</ion-toolbar>
+
+
 <ion-content padding class="background">
-  
-  <div class="kategori" align="center">KİTAPLAR</div><br><br>
+  <ion-item>
+    <ion-back-button defaultHref="/kitap"></ion-back-button>
+  </ion-item> 
+  <br>
+  <h1 class="kategori" align="center">{{loadedKitap.isim}}</h1><br><br>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+          <ion-item>
+            <ion-label>
+              <ion-img [src]="loadedKitap.resim"></ion-img>
+            </ion-label>
+          </ion-item>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 
   
-  <ion-img [src]="loadedKitap.resim"></ion-img>
-<ion-item *ngFor="let bilgi of loadedKitap.bilgiler"> {{bilgi}}</ion-item>
+<ion-item> {{loadedKitap.aciklama}}</ion-item>
      
 
    

@@ -1,14 +1,16 @@
-<ion-toolbar padding class="background">
-  <ion-buttons slot="start">
-    <ion-menu-button></ion-menu-button>
-  </ion-buttons>
-</ion-toolbar>
 <ion-content padding class="background">
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
   
   <div class="kategori" align="center">KİTAPLAR</div><br><br>
 
   <ion-grid>
-    <ion-row *ngFor="let kitap of Kitaplar">
+    <ion-row *ngFor="let kitap of Kitaplar" [routerLink]="'./'+ kitap.id ">
 
       <ion-col>
         <ion-img  [src]="kitap.resim " ></ion-img> 
@@ -25,10 +27,10 @@
               
             </ion-col>
             <ion-col size="9"> 
-                <div class="icerik" > 123 İndirme</div><br>
-                <div class="icerik" >  123 Beğeni</div><br>
-                <div class="icerik" > 23 Yorum</div><br>
-                <div class="icerik" > 45 TL</div><br>
+                <div class="icerik" > {{kitap.bilgiler[0]}} İndirme</div><br>
+                <div class="icerik" >  {{kitap.bilgiler[1]}} Beğeni</div><br>
+                <div class="icerik" > {{kitap.bilgiler[2]}} Yorum</div><br>
+                <div class="icerik" > {{kitap.bilgiler[3]}} Fiyat</div><br>
                 
             </ion-col>
           </ion-row>

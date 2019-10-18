@@ -60,18 +60,13 @@
       bottom: 0px;
       position: fixed;
   }
-  ion-toolbar.background{
-    --background: url(../../assets/a.png) 0 0 ;
-    --padding-start: var(--ion-padding, 0px);
-    --padding-end: var(--ion-padding, 0px);
-    --padding-top: var(--ion-padding, 0px);
-    --padding-bottom: var(--ion-padding, 0px);
-    -webkit-padding-start: var(--ion-padding, 0px);
-    padding-inline-start: var(--ion-padding, 0px);
-    -webkit-padding-end: var(--ion-padding, 0px);
-    padding-inline-end: var(--ion-padding, 0px);
-    padding-top: var(--ion-padding, 0px);
-    padding-bottom: var(--ion-padding, 0px);
+  ion-header {
+    --background: rgba(0,0,0,0);
+    --border-color: rgba(0,0,0,0);
+  }
+  ion-toolbar {
+    --background: rgba(0,0,0,0);
+    --border-color: rgba(0,0,0,0);
   }
   
   ion-content.background{

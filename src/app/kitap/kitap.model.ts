@@ -3,4 +3,6 @@ export interface kitap {
     id: string;
     resim: string;
     bilgiler: string[];
+    isim: string;
+    aciklama: string;
 }

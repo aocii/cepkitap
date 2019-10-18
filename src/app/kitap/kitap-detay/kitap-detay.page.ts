@@ -17,7 +17,7 @@ export class KitapDetayPage implements OnInit {
 
   ngOnInit() {
     this.activatedRoute.paramMap.subscribe(paramMap =>{
-      if(!paramMap.has('kitapId')){
+      if (!paramMap.has('kitapId')) {
         // devam
         return;
       }
