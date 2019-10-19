@@ -1,15 +1,23 @@
 ion-content.background{
   --background: url(/assets/a.png) 0 0/100% 100% no-repeat;
 }
- .icon{
-    width : 20px;
-    height : 20px;
-  }
 
-  .sabit{
-    position: fixed;
+  ion-header {
+    --background: rgba(0,0,0,0);
+    --border-color: rgba(0,0,0,0);
+      position: fixed;
+      left: 0px;
+      top: 0px;
+      z-index: 1;
+  }
+  ion-toolbar {
+    --background: rgba(0,0,0,0);
+    --border-color: rgba(0,0,0,0);
   }
   ion-item {
     --background: rgba(0,0,0,0);
     --border-color: rgba(0,0,0,0);
+    color: white;
+    
+
 }

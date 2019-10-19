@@ -1,11 +1,15 @@
 
 
 <ion-content padding class="background">
-  <ion-item>
-    <ion-back-button defaultHref="/kitap"></ion-back-button>
-  </ion-item> 
-  <br>
-  <h1 class="kategori" align="center">{{loadedKitap.isim}}</h1><br><br>
+    <ion-header>
+        <ion-toolbar>
+          <ion-buttons slot="start">
+              <ion-back-button defaultHref="/kitap"></ion-back-button>
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-header>
+  
+  <h1 class="kategori" align="center" style="color: white">{{loadedKitap.isim}}</h1>
 
   <ion-grid>
     <ion-row>
