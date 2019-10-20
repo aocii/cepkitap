@@ -1,12 +1,12 @@
 <ion-app>
   <ion-split-pane >
     <ion-menu type="overlay">
+      <ion-content padding class="background">
       <ion-header>
-        <ion-toolbar>
-          <ion-title>Menu</ion-title>
+        <ion-toolbar no-padding>
+          <ion-title no-padding style="color: white">CEP KİTABIM</ion-title>
         </ion-toolbar>
       </ion-header>
-      <ion-content padding class="background">
         <ion-list>
           <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages">
             <ion-item [routerDirection]="'root'" [routerLink]="[p.url]">

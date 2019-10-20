@@ -1,3 +1,28 @@
 ion-content.background{
     --background: url(/assets/a.png) 0 0/100% 100% no-repeat;
   }
+ion-toolbar {
+  --background: rgba(0,0,0,0);
+  --border-color: rgba(0,0,0,0);
+}
+ion-item {
+  --background: rgba(0,0,0,0);
+  --border-color: rgba(0,0,0,0);
+  }
+ion-list {
+  --background: rgba(0,0,0,0);
+  --border-color: rgba(0,0,0,0);
+  }
+    
+ion-menu-toggle {
+  --background: rgba(0,0,0,0);
+  --border-color: rgba(0,0,0,0);
+  }
+ion-menu {
+  --background: rgba(0,0,0,0);
+  --border-color: rgba(0,0,0,0);
+  }
+ion-label {
+  --background: rgba(0,0,0,0);
+  --border-color: rgba(0,0,0,0);
+  }

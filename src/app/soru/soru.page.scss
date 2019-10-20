@@ -63,6 +63,10 @@
   ion-header {
     --background: rgba(0,0,0,0);
     --border-color: rgba(0,0,0,0);
+      position: fixed;
+      left: 0px;
+      top: 0px;
+      z-index: 1;
   }
   ion-toolbar {
     --background: rgba(0,0,0,0);
