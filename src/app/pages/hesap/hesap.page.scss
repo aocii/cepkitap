@@ -11,12 +11,12 @@ ion-toolbar {
   --border-color: rgba(0,0,0,0);
 }
   
-  ion-content.background{
-    --background: url(../../assets/a.png) 0 0/100% 100% no-repeat;
+  ion-content.background{ 
+    --background: url(../../../assets/a.png) 0 0/100% 100% no-repeat;
   }
-  .icon{
-    width : 20px;
-    height : 20px;
+  .yanmenu{
+    width : 35px;
+    height : 35px;
   }
   .ara{
     background-color: #b1b1b1;
@@ -27,11 +27,7 @@ ion-toolbar {
   }
   .icerik{
     font-size: 100%;
-    color: white; 
-    height: 20px;
-  }
-  .l_icerik{ 
-    height: 20px  
+    color: white;   
   }
   .logo{
     width : 83px;
@@ -45,3 +41,5 @@ ion-toolbar {
     
     text-align:center;
  }
+ 
+  

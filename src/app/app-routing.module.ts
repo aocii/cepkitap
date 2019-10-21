@@ -9,27 +9,27 @@ const routes: Routes = [
   },
   {
     path: 'home',
-    loadChildren: () => import('./home/home.module').then(m => m.HomePageModule)
+    loadChildren: () => import('./pages/home/home.module').then(m => m.HomePageModule)
   },
   {
     path: 'list',
-    loadChildren: () => import('./list/list.module').then(m => m.ListPageModule)
+    loadChildren: () => import('./pages/list/list.module').then(m => m.ListPageModule)
   },
-  { path: 'hesap', loadChildren: './hesap/hesap.module#HesapPageModule' },
+  { path: 'hesap', loadChildren: './pages/hesap/hesap.module#HesapPageModule' },
   { path: 'kitap',
     children: [
       {
         path: '',
-        loadChildren: './kitap/kitap.module#KitapPageModule',
+        loadChildren: './pages/kitap/kitap.module#KitapPageModule',
       },
       {
         path: ':kitapId',
-        loadChildren: './kitap/kitap-detay/kitap-detay.module#KitapDetayPageModule'
+        loadChildren: './pages/kitap/kitap-detay/kitap-detay.module#KitapDetayPageModule'
       }
     ]
   },
-  { path: 'soru', loadChildren: './soru/soru.module#SoruPageModule' },
-  { path: 'giris', loadChildren: './giris/giris.module#GirisPageModule' }
+  { path: 'soru', loadChildren: './pages/soru/soru.module#SoruPageModule' },
+  { path: 'giris', loadChildren: './pages/giris/giris.module#GirisPageModule' }
 ];
 
 @NgModule({
